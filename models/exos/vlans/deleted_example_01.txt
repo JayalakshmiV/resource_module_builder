@@ -3,6 +3,8 @@
 # Before state:
 # -------------
 #
+# path: /rest/restconf/data/openconfig-vlan:vlans/
+# method: GET
 # {
 #   "openconfig-vlan:vlans": {
 #     "vlan": [
@@ -52,6 +54,13 @@
 
 # After state:
 # -------------
+#
+# path: /rest/restconf/data/openconfig-vlan:vlans/vlan=10
+# method: DELETE
+# path: /rest/restconf/data/openconfig-vlan:vlans/vlan=20
+# method: DELETE
+# path: /rest/restconf/data/openconfig-vlan:vlans/vlan=30
+# method: DELETE
 #
 # {
 #   "openconfig-vlan:vlans": {

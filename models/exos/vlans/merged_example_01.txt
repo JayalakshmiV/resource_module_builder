@@ -2,6 +2,8 @@
 
 # Before state:
 # -------------
+# path: /rest/restconf/data/openconfig-vlan:vlans/
+# method: GET
 #
 # {
 #   "openconfig-vlan:vlans": {
@@ -34,6 +36,9 @@
 
 # After state:
 # -------------
+#
+# path: /rest/restconf/data/openconfig-vlan:vlans/
+# method: POST
 #
 # {
 #   "openconfig-vlan:vlans": {

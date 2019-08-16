@@ -3,6 +3,9 @@
 # Before state:
 # -------------
 #
+# path: /rest/restconf/data/openconfig-vlan:vlans/
+# method: GET
+#
 # {
 #   "openconfig-vlan:vlans": {
 #     "vlan": [
@@ -47,12 +50,17 @@
     config:
       - name: Test_VLAN20
         vlan_id: 20
-      - vlan_id: 30
-        name: Test_VLAN30
+      - name: Test_VLAN30
+        vlan_id: 30
     state: replaced
 
 # After state:
 # -------------
+#
+# path: /rest/restconf/data/openconfig-vlan:vlans/vlan=20
+# method: PATCH
+# path: /rest/restconf/data/openconfig-vlan:vlans/vlan=30
+# method: PATCH
 #
 # {
 #   "openconfig-vlan:vlans": {
